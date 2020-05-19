@@ -3,8 +3,11 @@ applications:
   path: ./applications/registration-server/build/libs/registration-server.jar
   routes:
   - route: registration-pal-govind-murugan.cfapps.io
-  memory: 2G
+  disk_quota: 3G
+  memory: 5G
   instances: 1
+  buildpacks:
+  - https://github.com/cloudfoundry/java-buildpack.git
   env:
     JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+ } }'
     GRANT_TYPE: client_credentials
