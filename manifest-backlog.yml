@@ -1,6 +1,7 @@
 applications:
 - name: tracker-backlog
   path: ./applications/backlog-server/build/libs/backlog-server.jar
+  timeout: 180
   routes:
   - route: backlog-pal-govind-murugan.cfapps.io
   disk_quota: 3G

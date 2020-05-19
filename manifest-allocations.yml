@@ -1,6 +1,7 @@
 applications:
 - name: tracker-allocations
   path: ./applications/allocations-server/build/libs/allocations-server.jar
+  timeout: 180
   routes:
   - route: allocations-pal-govind-murugan.cfapps.io
   disk_quota: 3G

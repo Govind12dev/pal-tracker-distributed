@@ -1,6 +1,7 @@
 applications:
 - name: tracker-timesheets
   path: ./applications/timesheets-server/build/libs/timesheets-server.jar
+  timeout: 180
   routes:
   - route: timesheets-pal-govind-murugan.cfapps.io
   disk_quota: 3G

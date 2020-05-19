@@ -1,6 +1,7 @@
 applications:
 - name: tracker-registration
   path: ./applications/registration-server/build/libs/registration-server.jar
+  timeout: 180
   routes:
   - route: registration-pal-govind-murugan.cfapps.io
   disk_quota: 3G
